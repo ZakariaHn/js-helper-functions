@@ -39,7 +39,7 @@ displaydTxt();
 const spanx = document.querySelector(".spanX");
 const search = document.querySelector(".search");
 const btn = document.querySelector(".btn");
-
+btn.disabled = true;
 clearInput = () => {
   spanx.style.opacity = 0;
   search.value = "";
@@ -58,6 +58,17 @@ search.addEventListener("keyup", function () {
   }
 });
 
+// __________________________________________ show loading Icon after clicking the search button ______________________________________
+const loading = () => {
+  btn.innerHTML = "loading";
+  btn.classList.add("spinning");
+  setTimeout(function () {
+    btn.classList.remove("spinning");
+    btn.innerHTML = "Search";
+  }, 3000);
+};
+
+btn.addEventListener("click", loading);
 // ===================================================> Generic Pagintaion Function  <======================================
 
 const dataToDisplay = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
