@@ -1,0 +1,159 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020216;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  width: 80%;
+}
+body main section {
+  margin-top: 2rem;
+}
+
+.read_more {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(28, 44, 53, 0.459);
+  padding: 1rem 3rem;
+  height: 17rem;
+  color: #c3c3c3dc;
+}
+.read_more .txt {
+  letter-spacing: 0.15rem;
+  line-height: 1.4rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.read_more .readLess,
+.read_more .readMore {
+  display: block;
+  color: #27ae60;
+}
+.read_more:hover {
+  cursor: pointer;
+}
+.read_more .readLess {
+  opacity: 0;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1rem 3rem;
+  background-color: rgba(28, 44, 53, 0.459);
+}
+.search-field .spanX {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(28, 44, 53, 0.459);
+}
+.search-field .spanX:hover {
+  cursor: pointer;
+}
+.search-field .search {
+  width: 20rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+}
+.search-field .btn {
+  margin-left: 0.5rem;
+  height: 2rem;
+  background-color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(28, 44, 53, 0.459);
+  padding: 1rem 3rem;
+  height: 16rem;
+}
+.pagination .elements {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #27ae60;
+  font-size: larger;
+  font-weight: bolder;
+}
+.pagination .elements .item {
+  padding: 1rem;
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.pagination .pagenumbers {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination .pagenumbers * {
+  border: none;
+  background-color: transparent;
+  color: #27ae60;
+}
+.pagination .pagenumbers *:hover {
+  cursor: pointer;
+}
+
+.scroll_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(28, 44, 53, 0.459);
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  height: 5rem;
+}
+.scroll_buttons .button_up {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1fb67a80;
+}
+.scroll_buttons .button_up div {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  transform: rotate(45deg);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+.scroll_buttons .goToDiv {
+  color: #1fb67a80;
+}
+
+.empty {
+  background-color: rgba(28, 44, 53, 0.459);
+  height: 50rem;
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
