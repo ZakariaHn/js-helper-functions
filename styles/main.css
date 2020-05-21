@@ -40,7 +40,8 @@ body main section {
   display: block;
   color: #27ae60;
 }
-.read_more:hover {
+.read_more .readLess:hover,
+.read_more .readMore:hover {
   cursor: pointer;
 }
 .read_more .readLess {
@@ -80,8 +81,35 @@ body main section {
   margin-left: 0.5rem;
   height: 2rem;
   background-color: #ffffff;
+  position: relative;
+  line-height: 1.4;
+  transition: padding-right 0.3s ease;
+}
+.search-field .spinning {
+  padding-right: 2.5rem;
+}
+.search-field .spinning:before {
+  content: "";
+  border-radius: 50%;
+  right: 6px;
+  top: 50%;
+  position: absolute;
+  border-right: 3px solid #27ae60;
+  animation: rotate360 1s infinite linear, exist 0.1s forwards ease;
 }
 
+@keyframes rotate360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes exist {
+  100% {
+    width: 15px;
+    height: 15px;
+    margin: -8px 5px 0 0;
+  }
+}
 .pagination {
   display: flex;
   align-items: center;
