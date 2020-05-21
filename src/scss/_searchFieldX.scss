@@ -1,0 +1,37 @@
+.search-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1rem 3rem;
+  background-color: rgba(28, 44, 53, 0.459);
+
+  .spanX {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(28, 44, 53, 0.459);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .search {
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    text-align: center;
+  }
+
+  .btn {
+    margin-left: 0.5rem;
+    height: 2rem;
+    background-color: #ffffff;
+  }
+}

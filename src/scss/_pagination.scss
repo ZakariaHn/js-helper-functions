@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(28, 44, 53, 0.459);
+  padding: 1rem 3rem;
+  height: 16rem;
+  .elements {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #27ae60;
+    font-size: larger;
+    font-weight: bolder;
+    .item {
+      padding: 1rem;
+      width: 50%;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  }
+  .pagenumbers {
+    display: flex;
+    justify-content: space-between;
+    * {
+      border: none;
+      background-color: transparent;
+      color: #27ae60;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

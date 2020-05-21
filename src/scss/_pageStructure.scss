@@ -1,0 +1,19 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(2, 2, 22);
+  display: flex;
+  justify-content: center;
+  main {
+    width: 80%;
+    section {
+      margin-top: 2rem;
+    }
+  }
+}

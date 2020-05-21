@@ -1,0 +1,35 @@
+.scroll_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(28, 44, 53, 0.459);
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  height: 5rem;
+  .button_up {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1fb67a80;
+    div {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-top: 0.3rem;
+      transform: rotate(45deg);
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+    }
+  }
+  .goToDiv {
+    color: #1fb67a80;
+  }
+}
+
+.empty {
+  background-color: rgba(28, 44, 53, 0.459);
+  height: 50rem;
+  color: red;
+}
