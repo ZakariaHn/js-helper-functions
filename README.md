@@ -1,6 +1,6 @@
 # js-helper-functions
 
-### This repo contains some function for the sake of page dynamics:
+### This repo contains some function for the sake of page dynamics
 
 1. Read more/less button
 2. Search field/ button:
